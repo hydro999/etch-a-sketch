@@ -1,0 +1,50 @@
+html{
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.background {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(161, 184, 155);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  min-width: 70%;
+  margin: auto;
+  /* background-color: rgb(161, 184, 155); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 15px solid black;
+  flex-wrap: wrap;
+}
+
+.rowWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#cell {
+  border: 0.7px solid black;
+  flex: 1 0 auto;
+  aspect-ratio: 1 / 1;
+  margin-top: -0.7px;
+  margin-left: -0.7px;
+}
