@@ -11,6 +11,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   min-height: 100%;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .background {
@@ -31,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 15px solid black;
+  border: 15px solid #70816c;
   flex-wrap: wrap;
 }
 
@@ -41,10 +42,51 @@ body {
   justify-content: center;
 }
 
-#cell {
+.cell {
   border: 0.7px solid black;
   flex: 1 0 auto;
   aspect-ratio: 1 / 1;
   margin-top: -0.7px;
   margin-left: -0.7px;
+  /* transition: background-color 0.2s ease-out; */
+}
+
+
+
+.cell:hover {
+  background-color: lightgrey;
+  transition: background-color 0.09s linear;
+}
+
+button {
+  color: white;
+  background-color: hsla(0, 100%, 40%, 1);
+  border: 1px solid hsla(0, 100%, 55%, 1);
+  width: 60px;
+  height: 25px;
+  margin-left: 28px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+button:hover{
+  background-color: hsla(0, 100%,55%, 1);
+}
+button:active {
+  background-color: hsla(0, 100%,35%, 1);
+}
+
+.black {
+  background-color: black;
+}
+
+.black:hover {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+  transition: background-color 0.4s ease-out;
 }
